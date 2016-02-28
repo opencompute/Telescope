@@ -1,6 +1,6 @@
 Template.logo.helpers({
   logoUrl: function(){
-    return Settings.get("logoUrl");
+    return Settings.get('logoUrl', '/img/logo.png');
   }
 });
 

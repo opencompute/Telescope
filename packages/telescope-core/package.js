@@ -8,7 +8,7 @@ Package.describe({
 Package.onUse(function(api) {
 
   api.versionsFrom("METEOR@1.0");
-  
+
   var packages = [
     'telescope:lib@0.25.7', //  no dependencies
     'telescope:messages@0.25.7', // lib
@@ -21,7 +21,7 @@ Package.onUse(function(api) {
   ];
 
   api.use(packages);
-  
+
   api.imply(packages);
 
   api.addFiles([
@@ -72,7 +72,10 @@ Package.onUse(function(api) {
   ], 'client');
 
   api.addAssets([
+    'public/img/favicon.ico',
+    'public/img/k.png',
     'public/img/loading.svg',
+    'public/img/logo.png',
   ], 'client');
 
   api.addFiles([
